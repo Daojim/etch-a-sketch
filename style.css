@@ -1,3 +1,9 @@
+#container {
+  display: flex;
+}
+
 .square {
   outline: 1px solid;
+  margin: 0;
+  padding: 0;
 }
