@@ -9,3 +9,12 @@ for (let rows = 0; rows < 16; rows++) {
     container.appendChild(square);
   }
 }
+
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  let num = prompt("How many squares on each side would you like?");
+  if (num <= 0 || num > 100) {
+    alert("Number is limited between 1 to 100!");
+  }
+});
