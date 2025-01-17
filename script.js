@@ -1,12 +1,15 @@
 const container = document.querySelector("#container");
-for (let rows = 0; rows < 16; rows++) {
-  for (let columns = 0; columns < 16; columns++) {
-    const square = document.createElement("div");
-    square.addEventListener("mouseover", () => {
-      square.style.backgroundColor = "black";
-    });
-    square.classList.add("square");
-    container.appendChild(square);
+
+function gridMaker(num) {
+  for (let rows = 0; rows < num; rows++) {
+    for (let columns = 0; columns < num; columns++) {
+      const square = document.createElement("div");
+      square.addEventListener("mouseover", () => {
+        square.style.backgroundColor = "black";
+      });
+      square.classList.add("square");
+      container.appendChild(square);
+    }
   }
 }
 
