@@ -12,6 +12,7 @@ function gridMaker(num) {
     }
   }
 }
+gridMaker(16);
 
 const btn = document.querySelector("#btn");
 
