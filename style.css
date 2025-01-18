@@ -10,8 +10,8 @@
 
 .square {
   /* Divide the width equally */
-  flex: 0 0 calc(100% / 16);
+  flex: 0 0 calc(100% / var(--num));
   /* Adjust height for equal-sized squares */
-  height: calc(100% / 16);
+  height: calc(100% / var(--num));
   outline: 1px solid;
 }

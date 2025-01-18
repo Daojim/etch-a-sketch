@@ -1,6 +1,8 @@
 const container = document.querySelector("#container");
 
 function gridMaker(num) {
+  container.innerHTML = ""; //To clear grid
+  container.style.setProperty("--num", num);
   for (let rows = 0; rows < num; rows++) {
     for (let columns = 0; columns < num; columns++) {
       const square = document.createElement("div");
@@ -21,4 +23,5 @@ btn.addEventListener("click", () => {
   if (num <= 0 || num > 100) {
     alert("Number is limited between 1 to 100!");
   }
+  gridMaker(num);
 });
