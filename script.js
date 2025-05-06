@@ -22,6 +22,7 @@ btn.addEventListener("click", () => {
   let num = prompt("How many squares on each side would you like?");
   if (num <= 0 || num > 100) {
     alert("Number is limited between 1 to 100!");
+    num = 1;
   }
   gridMaker(num);
 });
